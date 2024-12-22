@@ -1,0 +1,58 @@
+* {
+    margin: 0
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.card {
+    color: rgba(255, 255, 255, 0.931);
+    width: 180px;
+    height: 270px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.692);
+    background: #7ba238;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .img-card {
+    height: 100px;
+    background-image: url("data:image/png;base64,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");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.card input {
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px
+}
+.card button {
+    background: #e2a30b;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+.total-section {
+    width: 200px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+.total-section .color {
+    display: flex;
+}
+.total-section .color div{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 1px;
+}
